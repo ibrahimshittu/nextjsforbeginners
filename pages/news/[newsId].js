@@ -1,8 +1,11 @@
-import React from 'react'
+import { useRouter } from 'next/router'
 
 function Detailpage() {
+  const router = useRouter()
+  const { newsId } = router.query
+
   return (
-    <div>Detailpage</div>
+    <div>Detailpage {newsId}</div>
   )
 }
 
