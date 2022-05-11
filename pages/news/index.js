@@ -11,7 +11,7 @@ function NewsPage() {
         <Link href="/news/9">
           <a><li>News 9</li></a>
         </Link>
-      </ul>
+      </ul>         
     </div>
   )
 }
