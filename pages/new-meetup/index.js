@@ -1,11 +1,15 @@
 import NewMeetupForm from '../../components/meetups/NewMeetupForm'
+import Layout from '../../components/layout/Layout'
 
 function newMeetupPage() {
   const onAddMeetup = () => {
-    
+
   }
   return (
-    <NewMeetupForm onAddMeetup={onAddMeetup} />
+    <Layout>
+      <NewMeetupForm onAddMeetup={onAddMeetup} />
+    </Layout>
+    
   )
 }
 
