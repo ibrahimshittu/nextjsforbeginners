@@ -1,19 +1,12 @@
-import Link from 'next/link'
+import NewMeetupForm from '../../components/meetups/NewMeetupForm'
 
-function NewsPage() {
+function newMeetupPage() {
+  const onAddMeetup = () => {
+    
+  }
   return (
-    <div>
-      <h1>NewsPage</h1>
-      <ul>
-        <Link href="/news/4">
-          <a><li>News 4</li></a>
-        </Link>
-        <Link href="/news/9">
-          <a><li>News 9</li></a>
-        </Link>
-      </ul>         
-    </div>
+    <NewMeetupForm onAddMeetup={onAddMeetup} />
   )
 }
 
-export default NewsPage
+export default newMeetupPage
